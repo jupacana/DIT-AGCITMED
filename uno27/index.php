@@ -21,7 +21,7 @@
 <script src="librerias/jquery.bpopup.min.js" type="text/javascript"></script>
 </head>
 <body>
-<div id="element_to_pop_up">Content of popup</div>
+<div id="element_to_pop_up">Este es el mensaje del pop up</div>
 <table border="0" cellspacing="0" cellpadding="0" width="1093" height="615" align="center">
   <tr align="left" valign="top">
     <td rowspan="1" colspan="1" height="1" width="1"></td>
