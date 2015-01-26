@@ -16,7 +16,23 @@ input[type="password"] {
 	font-style:italic;
 }
 
-#element_to_pop_up { display:none; }
+#element_to_pop_up { 
+    background-image:url(imagenes/pantalla1.png);
+    // background-color:#fff;
+    border-radius:15px;
+    color:#000;
+    display:none; 
+    padding:20px;
+    min-width:400px;
+    min-height: 180px;
+}
+.b-close{
+    cursor:pointer;
+    position:absolute;
+    right:10px;
+    top:5px;
+}
+
 
 .label {
     color:#000000;
