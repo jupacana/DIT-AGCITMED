@@ -5,13 +5,22 @@ body {
 	margin-bottom: 0px;
 	background-color: #DEE2E3;
 }
-input[type="text"], 
-input[type="password"] {
+.text, 
+.password {
     border: 1px solid #ccc;
     padding: 2px;
     font-size: 1.2em;
     color: #444;
     width: 200px;
+	border-radius:5px;
+	font-style:italic;
+}
+.text1 {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+    width: 125px;
 	border-radius:5px;
 	font-style:italic;
 }
