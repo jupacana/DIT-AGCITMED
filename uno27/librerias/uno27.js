@@ -12,33 +12,31 @@ jQuery(document).ready(function () {
     $("#btnBuscar").click(function () {
         validartelefono();
     });
-    $("#btnHU").click(function () {
-        $("#paso1").hide();
+    
+    $("#btnGuardar").click(function () {
         $("#paso2").show();
     });
-    $("#btnCE").click(function () {
-        $("#paso1").hide();
-        $("#paso5").show();
-    });
-    $("#btn1").click(function () {
-        $("#paso2").hide();
+    
+    $("#btnDocumentoP").click(function () {
         $("#paso3").show();
-        $("#paso3-1").show();
     });
-    $("#btn3").click(function () {
-        $("#paso3").hide();
-        $("#paso4").show();
+    
+    $("#btnGuardarP").click(function () {
+        $("#paso0").hide();
+		$("#paso1").hide();
+		$("#paso2").hide();
+		$("#paso3").hide();
+		$("#paso4").show();
+		$("#paso5").show();
     });
-    $("#btn5").click(function () {
-        $("#paso4").hide();
-        $("#paso3-1").hide();
-        location.reload();
-    });
-    $("#btn4").click(function () {
+    
+    $("#cmbSEspecialidad").change(function () {
         $("#paso6").show();
+		$("#paso7").show();
     });
-    $("#select1").change(function () {
-        $("#paso6").show();
+
+    $("#rdbControl").click(function () {
+        $("#paso7").show();
     });
 
 });
@@ -90,8 +88,6 @@ function validartelefono() {
             alert("Ingrese un Número Valido")
     }
     else {
-        $("#paso0").hide();
-        $("#paso1").show();
-        
+        $("#paso1").show();        
     }
 }
