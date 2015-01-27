@@ -72,7 +72,8 @@ function citmed() {
                 $('#element_to_pop_up').bPopup({
 	    easing: 'easeOutBack', //uses jQuery easing plugin
             speed: 450,
-            transition: 'slideDown'
+            transition: 'slideDown',
+           
         });
              
         }
@@ -82,13 +83,15 @@ function citmed() {
 
 })(jQuery);
 
+var mi_variable = "Hola Mundo";
 
 function validartelefono() {
     if ($("#txtTelefono").val() == "") {
+            alert("Ingrese un Número Valido")
     }
     else {
         $("#paso0").hide();
         $("#paso1").show();
+        
     }
 }
-;

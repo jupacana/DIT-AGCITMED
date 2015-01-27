@@ -22,7 +22,9 @@ body {
 </head>
 
 <body>
-
+<div id="element_to_pop_up">Ingrese un Número Valido
+            <a class="b-close">x<a/>
+</div>
 <table border="0" cellspacing="0" cellpadding="0" width="1025" height="577" align="center">
   <tr align="left" valign="top">
     <td rowspan="1" colspan="1" height="1" width="1"></td>
@@ -62,12 +64,11 @@ body {
     <td rowspan="1" colspan="1" width="1" height="40"></td>
     <td rowspan="2" colspan="3" width="590" height="311" background="imagenes/pantalla7.png" valign="middle" align="center">
 	<div id="paso0"> 
-		<label class="label">N&uacute;mero Telef&oacute;nico</label>
-		<input type="text" name="txtTelefono" id="txtTelefono">  
+                <input type="text" name="txtTelefono" placeholder="N&uacute;mero Telef&oacute;nico" id="txtTelefono">  
 		<input class="button1" type="button" name="btnBuscar" value="Buscar" id="btnBuscar">
 	</div>
 	<div id="paso1" style="display: none;">
-		<label class="label2">Juan Manuel LLano - 21-Julio-2014 - Agendamiento de cita - Cardiología - Agendada</label><br><br>
+            <label class="label2" >Juan Manuel LLano - 21-Julio-2014 - Agendamiento de cita - Cardiología - Agendada</label><br><br>
 		<label class="label1">SALUDO: Hospital Universitario de San Vicente Fundación, le habla John James Granados en qué le puedo colaborar?<br><br>
 		Usted se está comunicando al Hospital Universitario de Medellín o a Centros Especializados de Rionegro?
 		</label><br><br>
