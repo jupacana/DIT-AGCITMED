@@ -64,49 +64,59 @@ body {
     <td rowspan="1" colspan="1" width="1" height="40"></td>
     <td rowspan="2" colspan="3" width="590" height="311" background="imagenes/pantalla7.png" valign="middle" align="center">
 	<div id="paso0"> 
-                <input type="text" name="txtTelefono" placeholder="N&uacute;mero Telef&oacute;nico" id="txtTelefono">  
+                <input type="text" name="txtTelefono" placeholder="N&uacute;mero Telef&oacute;nico" id="txtTelefono" class="text">  
 		<input class="button1" type="button" name="btnBuscar" value="Buscar" id="btnBuscar">
 	</div>
-	<div id="paso1" style="display: none;">
-            <label class="label2" >Juan Manuel LLano - 21-Julio-2014 - Agendamiento de cita - Cardiología - Agendada</label><br><br>
-		<label class="label1">SALUDO: Hospital Universitario de San Vicente Fundación, le habla John James Granados en qué le puedo colaborar?<br><br>
-		Usted se está comunicando al Hospital Universitario de Medellín o a Centros Especializados de Rionegro?
-		</label><br><br>
-		<input class="button1" type="button" name="btnHU" value="HU" id="btnHU">
-		<input class="button1" type="button" name="btnCE" value="CE" id="btnCE">
+	<div id="paso1" style="display:none;">
+		<br><input type="text" name="txtNombre" placeholder="Nombre" id="txtNombre" class="text1">
+		<input type="text" name="txtApellido1" placeholder="Apellido1" id="txtApellido1" class="text1">
+		<input type="text" name="txtApellido2" placeholder="Apellido2" id="txtApellido2" class="text1">
+		<input type="button" name="btnGuardar" value="Guardar" id="btnGuardar" class="button1">
 	</div>
-	<div id="paso2" style="display: none;">
-		<label class="label1">¿El paciente se encuentra hospitalizado en otra institución o tiene hospitalización domiciliaria?</label><br><br>
-		<input class="button1" type="button" name="btn1" value="Sí" id="btn1">
-		<input class="button1" type="button" name="btn2" value="No" id="btn2">
-	</div>
-	<div id="paso3" style="display: none;">
-		<label class="label1">Sr- Sra. Teniendo en cuenta que el paciente se encuentra en unas condiciones especiales, no puede ser atendido por el servicio de consulta ambulatoria del Hospital. (Si está hospitalizado en otra institución, de allí deben comunicarse al 5167464 para ser comentado y definir si puede ser hospitalizado en esta institución, y si tiene hospitalización domiciliaria debe comunicarse con su EPS)</label><br><br>
-		<input class="button1" type="button" name="btn3" value="Continuar" id="btn3">
-	</div>
-	<div id="paso4" style="display: none;">
-		<label class="label1">DESPEDIDA: Recuerde que habló con John James Granados del Hospital Universitario de San Vicente Fundación, que tenga un(a) feliz  mañana – día – tarde – noche</label><br><br>
-	</div>
-	<div id="paso5" style="display: none;">
-		<label class="label1">Indíqueme el número del documento por favor (con el número de documento se verifican episodios y Reporte de usuarios con 		cuentas pendientes)<br>
-		<label class="label">Documento</label>
-		<input type="text" name="txt1" id="txt1">
-		<input class="button1" type="button" name="btn4" value="Buscar" id="btn4">
-	</div>
-	<div id="paso6" style="display: none;">
-		<label class="label2"><br>Juan Manuel LLano - 21-Julio-2014 - Agendamiento de cita - Cardiología - Agendada</label><br><br>
-		<label class="label2">NO PRESENTA REPORTES NEGATIVOS</label><br>
-		<label class="label2">Señor(a) Juan Manuel la consulta es por cuál especialidad?</label><br><br>
-		<select name="select1" class="label" id="select1">
+	<div id="paso2" style="display:none;">
+		<br><select id="cmbTDocumento" class="labe2">
 			<option value="0">Seleccione...</option>
-			<option value="Especialidad">Especialidad</option>
-			<option value="Anestesiología">Anestesiología</option>
-			<option value="Cardiología3">Cardiología</option>
-			<option value="Estomatología">Estomatología</option>
-			<option value="Ginecología">Ginecología</option>
-			<option value="Optometría">Optometría</option>
-			<option value="Maxilofacial">Maxilofacial</option>
+			<option value="1">C&eacute;dula</option>
+			<option value="2">Tarjeta de Identidad</option>
+			<option value="3">Registro Civil</option>
 		</select>
+		<input type="text" name="txtDocumentoP" placeholder="Documento Paciente" id="txtDocumentoP" class="text">
+		<input type="button" name="btnDocumentoP" value="Guardar" id="btnDocumentoP" class="button1">
+	</div>
+	<div id="paso3" style="display:none;">
+		<br><input type="text" name="txtNombreP" placeholder="Nombre" id="txtNombreP" class="text1">
+		<input type="text" name="txtApellido1P" placeholder="Apellido1" id="txtApellido1P" class="text1">
+		<input type="text" name="txtApellido2P" placeholder="Apellido2" id="txtApellido2P" class="text1">
+		<input type="button" name="btnGuardarP" value="Guardar" id="btnGuardarP" class="button1">
+	</div>
+	<div id="paso4" style="display:none;">
+		<br><label class="label1">¿A d&oacute;nde se esta comunicando?</label>
+		<label class="label2">HU</label><input type="radio" name="rdbDestino" value="HU" id="rdbDestino">
+		<label class="label2">CE</label><input type="radio" name="rdbDestino" value="CE" id="rdbDestino">
+	</div>
+	<div id="paso5" style="display:none;">
+		<br><select id="cmbEspecialidad" class="labe1">
+			<option value="0">Seleccione...</option>
+			<option value="1">Medicina Interna</option>
+			<option value="2">Cardiolog&iacute;a</option>
+			<option value="3">Neorolog&iacute;a</option>
+		</select>
+		<select id="cmbSEspecialidad" class="labe1">
+			<option value="0">Seleccione...</option>
+			<option value="1">Medicina Interna</option>
+			<option value="2">Cardiolog&iacute;a</option>
+			<option value="3">Neorolog&iacute;a</option>
+		</select>
+	</div>
+	<div id="paso6" style="display:none;">
+		<br><label class="label1">¿Paciente Hospitalizado?</label>
+		<label class="label2">SI</label><input type="radio" name="rdbHospitalizado" value="SI" id="rdbHospitalizado">
+		<label class="label2">NO</label><input type="radio" name="rdbHospitalizado" value="NO" id="rdbHospitalizado">
+	</div>
+	<div id="paso7" style="display:none;">
+		<br><label class="label1">¿Primera vez?</label>
+		<label class="label2">SI</label><input type="radio" name="rdbControl" value="SI" id="rdbControl">
+		<label class="label2">NO</label><input type="radio" name="rdbControl" value="NO" id="rdbControl">
 	</div>
 	</td>
   </tr>
