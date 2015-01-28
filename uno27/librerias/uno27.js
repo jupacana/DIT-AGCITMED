@@ -27,17 +27,13 @@ jQuery(document).ready(function () {
 		$("#paso2").hide();
 		$("#paso3").hide();
 		$("#paso4").show();
-		$("#paso5").show();
-    });
-    
-    $("#cmbSEspecialidad").change(function () {
-        $("#paso6").show();
-		$("#paso7").show();
     });
 
-    $("#rdbControl").click(function () {
-        $("#paso7").show();
+$("#cmbSEspecialidad").change(function () {
+        $("#paso6").show();
     });
+
+    
 
 });
 function citmed() {
@@ -91,3 +87,38 @@ function validartelefono() {
         $("#paso1").show();        
     }
 }
+
+function rdbDestinoHU(){
+	$("#paso5").show();
+};
+
+function rdbDestinoCE(){
+	$("#paso5").show();
+};
+
+function rdbHospitalizadoSi(){
+	alert("Ir a guión de Despedida");
+	location.reload();
+};
+
+function rdbHospitalizadoNo(){
+	$("#paso7").show();
+};
+
+function rdbControlSi(){
+	$("#paso4").hide();
+	$("#paso5").hide();
+	$("#paso6").hide();
+	$("#paso7").hide();
+	alert("Proceso continúa en SAP");
+	$("#paso8").show();
+};
+
+function rdbControlNo(){
+	$("#paso4").hide();
+	$("#paso5").hide();
+	$("#paso6").hide();
+	$("#paso7").hide();
+	alert("Proceso continúa en SAP");
+	$("#paso8").show();
+};
