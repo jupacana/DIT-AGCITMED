@@ -69,8 +69,8 @@ body {
 	</div>
 	<div id="paso1" style="display:none;">
 		<br><input type="text" name="txtNombre" placeholder="Nombre" id="txtNombre" class="text1">
-		<input type="text" name="txtApellido1" placeholder="Apellido1" id="txtApellido1" class="text1">
-		<input type="text" name="txtApellido2" placeholder="Apellido2" id="txtApellido2" class="text1">
+		<input type="text" name="txtApellido1" placeholder="Apellido 1" id="txtApellido1" class="text1">
+		<input type="text" name="txtApellido2" placeholder="Apellido 2" id="txtApellido2" class="text1">
 		<input type="button" name="btnGuardar" value="Guardar" id="btnGuardar" class="button1">
 	</div>
 	<div id="paso2" style="display:none;">
