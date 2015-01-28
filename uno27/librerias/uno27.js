@@ -122,3 +122,52 @@ function rdbControlNo(){
 	alert("Proceso continúa en SAP");
 	$("#paso8").show();
 };
+
+
+
+
+function validartelefono() {
+    if (/^\d{7}$/.test($("#txtTelefono").val())) {
+            $("#paso1").show(); 
+    }
+    else if ((/^\d{10}$/.test($("#txtTelefono").val()))){
+           $("#paso1").show(); 
+    }
+    else {
+        alert("Ingrese un numero Valido")     
+    }
+}
+
+
+
+;
+(function ($) {
+
+    // DOM Ready
+    $(function () {
+
+        // Binding a click event
+        // From jQuery v.1.7.0 use .on() instead of .bind()
+        $('#btnGuardar').bind('click', function (e) {
+            if (($("#txtUsuario").val() == 'james') && ($("#txtPasswd").val() == 'abc123')) {
+                window.location.assign("citmed.php")
+            }
+            // Prevents the default action to be triggered. 
+            else {
+            // Prevents the default action to be triggered. 
+                e.preventDefault();
+
+                // Triggering bPopup when click event is fired
+                $('#element_to_pop_up').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown',
+           
+        });
+             
+        }
+                });
+
+    });
+
+})(jQuery);
