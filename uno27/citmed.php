@@ -74,7 +74,7 @@ body {
 		<input type="button" name="btnGuardar" value="Guardar" id="btnGuardar" class="button1">
 	</div>
 	<div id="paso2" style="display:none;">
-		<br><select id="cmbTDocumento" class="labe2">
+		<br><select id="cmbTDocumento" class="label3">
 			<option value="0">Seleccione...</option>
 			<option value="1">C&eacute;dula</option>
 			<option value="2">Tarjeta de Identidad</option>
@@ -91,32 +91,42 @@ body {
 	</div>
 	<div id="paso4" style="display:none;">
 		<br><label class="label1">¿A d&oacute;nde se esta comunicando?</label>
-		<label class="label2">HU</label><input type="radio" name="rdbDestino" value="HU" id="rdbDestino">
-		<label class="label2">CE</label><input type="radio" name="rdbDestino" value="CE" id="rdbDestino">
+		<label class="label2">HU</label><input type="radio" name="rdbDestino" value="HU" id="rdbDestino" onClick="rdbDestinoHU()">
+		<label class="label2">CE</label><input type="radio" name="rdbDestino" value="CE" id="rdbDestino" onClick="rdbDestinoCE()">
 	</div>
 	<div id="paso5" style="display:none;">
-		<br><select id="cmbEspecialidad" class="labe1">
-			<option value="0">Seleccione...</option>
+		<br><select id="cmbEspecialidad" class="label3">
+			<option value="0">Especialidad...</option>
 			<option value="1">Medicina Interna</option>
 			<option value="2">Cardiolog&iacute;a</option>
 			<option value="3">Neorolog&iacute;a</option>
 		</select>
-		<select id="cmbSEspecialidad" class="labe1">
-			<option value="0">Seleccione...</option>
+		<select id="cmbSEspecialidad" class="label3">
+			<option value="0">Subespecialidad...</option>
 			<option value="1">Medicina Interna</option>
 			<option value="2">Cardiolog&iacute;a</option>
 			<option value="3">Neorolog&iacute;a</option>
 		</select>
 	</div>
 	<div id="paso6" style="display:none;">
-		<br><label class="label1">¿Paciente Hospitalizado?</label>
-		<label class="label2">SI</label><input type="radio" name="rdbHospitalizado" value="SI" id="rdbHospitalizado">
-		<label class="label2">NO</label><input type="radio" name="rdbHospitalizado" value="NO" id="rdbHospitalizado">
+            <br><label class="label1">¿El Paciente est&aacute; Hospitalizado?</label>
+		<label class="label2">SI</label><input type="radio" name="rdbHospitalizado" value="SI" id="rdbHospitalizado" onClick="rdbHospitalizadoSi()">
+		<label class="label2">NO</label><input type="radio" name="rdbHospitalizado" value="NO" id="rdbHospitalizado" onClick="rdbHospitalizadoNo()">
 	</div>
 	<div id="paso7" style="display:none;">
 		<br><label class="label1">¿Primera vez?</label>
 		<label class="label2">SI</label><input type="radio" name="rdbControl" value="SI" id="rdbControl">
 		<label class="label2">NO</label><input type="radio" name="rdbControl" value="NO" id="rdbControl">
+	</div>
+        <div id="paso8" style="display:none;">
+		<br><label class="label2">Tipificaci&oacute;n: </label>
+                <select id="cmbTipificacion" class="label3">
+                    <option value="0">Seleccione...</option>
+                    <option value="1">Cita Agendada</option>
+                    <option value="2">Llamada inconclusa</option>
+                    <option value="3">Cita NO Agendada - Paciente Hospitalizado</option>
+                    <option value="4">Paciente en Mora</option>
+		</select>
 	</div>
 	</td>
   </tr>
