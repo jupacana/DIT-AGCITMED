@@ -19,12 +19,24 @@ body {
 <script src="librerias/js/jquery.equalheights.js" type="text/javascript"></script>
 <script src="librerias/js/jquery.cycle.all.js" type="text/javascript"></script>
 <script src="librerias/uno27.js" type="text/javascript"></script>
+        <script src="librerias/jquery.bpopup.min.js" type="text/javascript"></script>
+
 </head>
 
 <body>
-<div id="element_to_pop_up">Ingrese un Número Valido
+
+        <div id="element_to_pop_up" class="element_to_pop_up">Ingrese un Número Valido
             <a class="b-close">x<a/>
 </div>
+        <div id="CedulaPopup" class="element_to_pop_up">Ingrese un Número de cedula Valido
+            <a class="b-close">x<a/>
+        </div>
+        <div id="NombrePopup" class="element_to_pop_up">Ingrese un Nombre Valido
+            <a class="b-close">x<a/>
+        </div>
+         <div id="ApellidoPopup" class="element_to_pop_up">Ingrese un Apellido Valido
+            <a class="b-close">x<a/>
+        </div>
 <table border="0" cellspacing="0" cellpadding="0" width="1025" height="577" align="center">
   <tr align="left" valign="top">
     <td rowspan="1" colspan="1" height="1" width="1"></td>
@@ -68,9 +80,9 @@ body {
 		<input class="button1" type="button" name="btnBuscar" value="Buscar" id="btnBuscar">
 	</div>
 	<div id="paso1" style="display:none;">
-		<br><input type="text" name="txtNombre" placeholder="Nombre" id="txtNombre" class="text1">
-		<input type="text" name="txtApellido1" placeholder="Apellido 1" id="txtApellido1" class="text1">
-		<input type="text" name="txtApellido2" placeholder="Apellido 2" id="txtApellido2" class="text1">
+                        <br><input type="text" name="txtNombre" placeholder="Nombre" id="txtNombre" class="text1" onkeypress="return val(event)">
+                        <input type="text" name="txtApellido1" placeholder="Apellido1" id="txtApellido1" class="text1" onkeypress="return val(event)">
+                        <input type="text" name="txtApellido2" placeholder="Apellido2" id="txtApellido2" class="text1" onkeypress="return val(event)">
 		<input type="button" name="btnGuardar" value="Guardar" id="btnGuardar" class="button1">
 	</div>
 	<div id="paso2" style="display:none;">
@@ -80,13 +92,13 @@ body {
 			<option value="2">Tarjeta de Identidad</option>
 			<option value="3">Registro Civil</option>
 		</select>
-		<input type="text" name="txtDocumentoP" placeholder="Documento Paciente" id="txtDocumentoP" class="text">
+                        <input type="text" name="txtDocumentoP" placeholder="Documento Paciente" id="txtDocumentoP" class="text" onkeypress="return justNumbers(event);">
 		<input type="button" name="btnDocumentoP" value="Guardar" id="btnDocumentoP" class="button1">
 	</div>
 	<div id="paso3" style="display:none;">
-		<br><input type="text" name="txtNombreP" placeholder="Nombre" id="txtNombreP" class="text1">
-		<input type="text" name="txtApellido1P" placeholder="Apellido1" id="txtApellido1P" class="text1">
-		<input type="text" name="txtApellido2P" placeholder="Apellido2" id="txtApellido2P" class="text1">
+                        <br><input type="text" name="txtNombreP" placeholder="Nombre" id="txtNombreP" class="text1" onkeypress="return val(event)">
+                        <input type="text" name="txtApellido1P" placeholder="Apellido1" id="txtApellido1P" class="text1" onkeypress="return val(event)">
+                        <input type="text" name="txtApellido2P" placeholder="Apellido2" id="txtApellido2P" class="text1" onkeypress="return val(event)">
 		<input type="button" name="btnGuardarP" value="Guardar" id="btnGuardarP" class="button1">
 	</div>
 	<div id="paso4" style="display:none;">
