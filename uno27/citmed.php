@@ -102,7 +102,7 @@ body {
 		<input type="button" name="btnGuardarP" value="Guardar" id="btnGuardarP" class="button1">
 	</div>
 	<div id="paso4" style="display:none;">
-		<br><label class="label1">¿Sr./Sra. A d&oacute;nde se esta comunicando?</label>
+            <br><label class="label1">¿Sr./Sra. A d&oacute;nde se est&aacute; comunicando?</label>
 		<label class="label2">HU</label><input type="radio" name="rdbDestino" value="HU" id="rdbDestino" onClick="rdbDestinoHU()">
 		<label class="label2">CE</label><input type="radio" name="rdbDestino" value="CE" id="rdbDestino" onClick="rdbDestinoCE()">
 	</div>
