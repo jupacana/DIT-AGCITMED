@@ -57,7 +57,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td rowspan="1" colspan="1" width="1" height="38"></td>
-                <td rowspan="1" colspan="1" width="212" height="38" background="imagenes/loggin6.jpg"><input type="text" name="txtUsuario" placeholder="Usuario" id="txtUsuario">    </td>
+                <td rowspan="1" colspan="1" width="212" height="38" background="imagenes/loggin6.jpg"><input type="text" name="txtUsuario" placeholder="Usuario" id="txtUsuario" class="text">    </td>
             </tr>
             <tr align="left" valign="top">
                 <td rowspan="1" colspan="1" width="1" height="29"></td>
@@ -65,7 +65,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td rowspan="1" colspan="1" width="1" height="38"></td>
-                <td rowspan="1" colspan="1" width="212" height="38" background="imagenes/loggin8.jpg"><input type="password" placeholder="Contrase&nacute;a" name="txtPasswd" id="txtPasswd"></td>
+                <td rowspan="1" colspan="1" width="212" height="38" background="imagenes/loggin8.jpg"><input type="password" placeholder="Contrase&nacute;a" name="txtPasswd" id="txtPasswd" class="password"></td>
             </tr>
             <tr align="left" valign="top">
                 <td rowspan="1" colspan="1" width="1" height="100"></td>
