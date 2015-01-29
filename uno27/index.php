@@ -21,7 +21,9 @@
         <script src="librerias/jquery.bpopup.min.js" type="text/javascript"></script>
     </head>
     <body>
-        <div id="UsuarioPopup" class="element_to_pop_up">Usuario o Contraseña Incorrecta
+        <div id="UsuarioPopup" class="element_to_pop_up">
+            <br></br><br></br><br></br><br></br><br></br><br></br><br>
+            <a class="label1" >Usuario o Contraseña Incorrecta</a>
             <a class="b-close">x<a/>
         </div>
         <table border="0" cellspacing="0" cellpadding="0" width="1093" height="615" align="center">

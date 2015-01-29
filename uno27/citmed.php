@@ -26,7 +26,7 @@
     <body>
 
         <div id="element_to_pop_up" class="element_to_pop_up">Ingrese un Número Valido
-            <a class="b-close">x<a/>
+             <a class="b-close">x<a/>
         </div>
         <div id="CedulaPopup" class="element_to_pop_up">Ingrese un Número de cedula Valido
             <a class="b-close">x<a/>
